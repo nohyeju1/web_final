@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Document</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="design.css">
+
+</head>
+    <div class="logo">
+    <a href="index.html"><h1><img src="logo.png" height="60%"> </h1></a>
+    </div>
+<body>
+ 
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="1932708__nohyeju_w5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="1932708_nohyeju_com.jpg"alt=""></div>
+      <div class="swiper-slide"><img src="1932708_Nohyeju_w2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="1932708_nohyeju_w3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="%EA%B5%BF%EC%A6%88.jpg"alt=""></div>
+      <div class="swiper-slide"><img src="%EA%B7%B8%EB%A6%BC1.jpg"alt=""></div>
+      <div class="swiper-slide"><img src="%ED%83%80%EC%9D%B4%ED%8F%AC%20%ED%8F%AC%EC%8A%A4%ED%84%B0%20%EC%B5%9C%EC%A2%85_1932708%EB%85%B8%ED%98%9C%EC%A3%BC.jpg"alt=""></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next id"></div>
+    <div class="swiper-button-prev id"></div>
+  </div>
+    
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+<script>
+    var swiper = new Swiper('.swiper-container', 
+    {
+     effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
